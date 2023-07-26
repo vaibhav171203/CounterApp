@@ -1,0 +1,37 @@
+$("#increase").mouseover(function(){
+    $("#increase").css("background-color","green");
+});
+$("#increase").mouseout(function(){
+    $("#increase").css("background-color","white");
+});
+$("#reset").mouseover(function(){
+    $("#reset").css("background-color","yellow");
+});
+$("#reset").mouseout(function(){
+    $("#reset").css("background-color","white");
+});
+$("#decrease").mouseover(function(){
+    $("#decrease").css("background-color","red");
+});
+$("#decrease").mouseout(function(){
+    $("#decrease").css("background-color","white");
+});
+$("h1").hover(function(){
+    $("h1").css("color","black");
+},
+function(){
+    $("h1").css("color","blue");
+});
+var count =0;
+$("#increase").click(function(){
+    count++
+    $("p").html(+count);
+});
+$("#reset").click(function(){
+    count=0
+    $("p").html(+count);
+});
+$("#decrease").click(function(){
+    count--
+    $("p").html(+count);
+});
